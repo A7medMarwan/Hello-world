@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import NameList from './Components/NameList';
+import ParentComponent from './Components/ParentComponent';
+// import Hello from './Components/Welcome';
+// import Message from './Components/Message';
+// import Counter from './Components/Counter';
+// import ClassClick from './Components/ClassClick';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NameList />
+      {/* <ParentComponent />
+      <Hello name='Ahmed'>
+        <p>my nickname is Maro</p>
+      </Hello>
+      <Message />
+      <Counter />
+      <ClassClick /> */}
     </div>
   );
 }
