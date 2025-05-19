@@ -1,9 +1,8 @@
-import React from 'react'
 
-export default function ChildComponent(props) {
+const ChildComponent = ({ show }) => {
   return (
     <div>
-      <button onClick={()=>props.show('child')}>Click</button>
+      <button onClick={() => show("Child")}>Click</button>
     </div>
   )
 }
